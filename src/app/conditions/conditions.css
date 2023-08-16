@@ -1,0 +1,56 @@
+.container{
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+   
+    
+    .container {
+      width: 50%;
+    }
+
+  }
+  .continue-btn{
+    background-color: #e7f2f9 !important; 
+    border: none; 
+    padding: 20px   100px;
+    font-size: 20px;
+    border-radius: 4px; 
+    color: white;
+    transition: all .5s;
+    /* margin: 220px; */
+  }
+  .previous-btn{
+    padding: 20px   120px;
+    font-size: 20px;
+    border-radius: 4px; 
+    /* margin: 220px; */
+    transition: all .5s;
+    border: 1px solid #e7e6e6;
+  }
+  .previous-btn:hover{
+    border-color: rgb(83, 191, 254);
+  }
+  .condition-title{
+   background-color: #fff3ce; 
+   width: fit-content;
+   
+  }
+  .conditon-para{
+    background-color: rgba(190, 184, 184, 0.24);
+    color: #554c57;
+    font-size: 21px;
+    padding:130px 70px;
+  }
+  .start-over-btn{
+    padding: 20px   120px;
+    font-size: 20px;
+    border-radius: 4px; 
+    transition: all .5s;
+    border: 1px solid #e7e6e6;
+  }
+
+  .start-over-btn:hover{
+     background-color:  rgba(83, 191, 254, 0.544);
+     color: white;
+  }
