@@ -10,7 +10,7 @@ export default function symptoms() {
       <div className="container ">
         <div class="row  justify-content-center align-items-center g-2  shadow p-4 mt-4">
           <h3>What are your symptoms?</h3>
-          <div className="col-6">
+          <div className="col-lg-6">
             <input
               type="text"
               className="form-control shadow symptoms-input pt-4 pb-4"
@@ -22,23 +22,29 @@ export default function symptoms() {
             <div className="text-center"><img src="https://img.freepik.com/free-vector/calendar-icon-white-background_1308-84634.jpg?" className="w-50 d-flext align-items-center justify-content-center mt-4 mb-4" alt />
 </div>
           </div>
-          <div className="col-6">
+          <div className="col-lg-6">
             <img src="https://www.cdc.gov/dengue/images/symptoms/DengueSymptomsUpdated.jpg?_=45121" className="w-100 mt-4 mb-4" alt />
           </div>
           <hr/>
 
-          <div className="col-12 d-flex justify-content-between btn-conainer  ">
-            <button name="" id="" class="btn " role="button">
-              <Link href="/info" className="btn previous-btn">
-                Previous
-              </Link>
-            </button>{" "}
-            <button name="" id="" class="btn " role="button">
-              <Link href="/questions" className="btn continue-btn">
-                Continue
-              </Link>
-            </button>
-          </div>
+          <div className="col-12 d-flex justify-content-between  ">
+        <div className='col-5'>
+           <button name="" id="" class="btn p-4 form-control w-100 previous-btn" >
+          <Link href="/info" className=" text-decoration-none text-reset">
+            Previous
+          </Link>
+        </button>{" "}
+        </div>
+       
+        <div className='col-5'>    
+         <button name="" id=""class="btn p-4 form-control w-100 continue-btn">
+          <Link href="/questions" className=" text-decoration-none text-reset">
+            Continue
+          </Link>
+        </button>
+           </div>
+   
+      </div>
         </div>
       </div>
     </>

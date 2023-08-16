@@ -5,7 +5,7 @@ export default function questions() {
   return (
     <div className="container ">
       <div class="row  justify-content-center align-items-center g-2  shadow p-4 mt-4">
-        <div className="w-50">
+        <div className="col-lg-6">
           {" "}
           <h2>Please tell us more </h2>
           <h5 className="text-color mb-4 pb-4">Skip this section </h5>
@@ -46,10 +46,10 @@ export default function questions() {
             <h4> Could you be pregnant? <span className="text-secondary fs-6"> (optional)</span> </h4>
             <div className=" ">
               <a name="" id="" class="btn yes-btn" href="#" role="button">
-                Male
+                yes
               </a>
               <a name="" id="" class="btn no-btn" href="#" role="button">
-                Female
+                no
               </a>
             </div>
             </div>
@@ -84,18 +84,24 @@ export default function questions() {
           <div className="col-12"></div>
         </div>
         <hr />
-        <div className="col-12 d-flex justify-content-between btn-conainer ">
-          <button name="" id="" class="btn " role="button">
-            <Link href="/symptoms" className="btn previous-btn">
-              Previous
-            </Link>
-          </button>{" "}
-          <button name="" id="" class="btn " role="button">
-            <Link href="/conditions" className="btn continue-btn">
-              Continue
-            </Link>
-          </button>
+        <div className="col-12 d-flex justify-content-between  ">
+        <div className='col-5'>
+           <button name="" id="" class="btn p-4 form-control w-100 previous-btn" >
+          <Link href="/symptoms" className=" text-decoration-none text-reset">
+            Previous
+          </Link>
+        </button>{" "}
         </div>
+       
+        <div className='col-5'>    
+         <button name="" id=""class="btn p-4 form-control w-100 continue-btn">
+          <Link href="/conditions" className=" text-decoration-none text-reset">
+            Continue
+          </Link>
+        </button>
+           </div>
+   
+      </div>
       </div>
     </div>
   );

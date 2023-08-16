@@ -21,33 +21,35 @@ export default function info() {
               <span className="text-color">See additional information </span>
             </p>
           </div>
-          <div className=" row mt-4 ">
-            <div className="col-6 d-flex justify-content-around">
+          <div className=" row mt-4  ">
+            <div className="col-lg-6 text-center mb-4 pb-4">
               <p className="age">Age</p>
-            </div>
-            <div className="col-6 d-flex justify-content-around">
-              <p className="sex">Sex</p>
-            </div>
-          </div>
-          <div className="col-12 d-flex justify-content-around">
-            <input
-              type="text"
-              className=" age-input form-control"
-              style={{ marginLeft: "130px" }}
-            />
 
-            <div className="flex-column" style={{ marginLeft: "180px" }}>
-              <a name="" id="" class="btn male-btn" href="#" role="button">
-                Male
-              </a>
-              <a name="" id="" class="btn female-btn" href="#" role="button">
-                Female
-              </a>
+              <input type="text" className=" age-input  " />
+            </div>
+            <div className="col-lg-6  text-center">
+              <p className="sex">Sex</p>
+              <div className=" ">
+                <a name="" id="" class="btn male-btn" href="#" role="button">
+                  Male
+                </a>
+                <a name="" id="" class="btn female-btn" href="#" role="button">
+                  Female
+                </a>
+              </div>
             </div>
           </div>
-          <div className="col-12 text-center">
-            <button name="" id="" class="btn " role="button">
-              <Link href="/symptoms" className="btn continue-info-btn">
+
+          <div className="col-5">
+            <button
+              name=""
+              id=""
+              class="btn p-4 form-control w-100 continue-info-btn"
+            >
+              <Link
+                href="/symptoms"
+                className=" text-decoration-none text-reset"
+              >
                 Continue
               </Link>
             </button>

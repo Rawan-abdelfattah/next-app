@@ -1,6 +1,7 @@
 .container{
     width: 100%;
 }
+
 @media screen and (min-width: 1200px) {
    
     
@@ -9,9 +10,7 @@
     }
 
   }
-
-
-  .continue-btn{
+.continue-btn{
     background-color: #e7f2f9 !important; 
     border: none; 
     font-size: 20px;
@@ -27,42 +26,17 @@
 .previous-btn:hover{
     border-color: rgb(83, 191, 254);
 }
-.form-check {
-    transition: all .5s;
-    cursor: pointer;  
-    padding: 10px 40px;
+.disease-card{
+    background-color:#effafd ;
+    font-weight: 700;
+    color: #6d6d6d;
+}
 
-}
-.form-check:hover {
-    background-color: #1fdc90b0 !important;
-  
-    border-radius: 10px;
-    color: white;
-}
-.continue-answer{
-    background-color: #1f97dc !important; 
-    border: none; 
-    padding: 20px   60px;
-    font-size: 20px;
-    border-radius: 4px; 
-    color: white;
-    transition: all .5s;
-
-}
-.continue-answer:hover{
-    background-color: #1670a5 !important; 
-    border: none; 
-    padding: 20px   60px;
-    font-size: 20px;
-    border-radius: 4px; 
-    color: white;
-
-}
 .yes-btn , .no-btn{
     background-color: #e7f2f9 !important; 
     border: none; 
     padding: 20px ;
-    width: 140px;
+    width: 120px;
     font-size: 17px;
     border-radius: 4px; 
     margin-left: 2px;

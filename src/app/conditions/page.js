@@ -46,18 +46,24 @@ export default function conditions() {
       
         </div>
 <hr/>
-        <div className="col-12 d-flex justify-content-between btn-conainer ">
-          <button name="" id="" class="btn " role="button">
-            <Link href="/questions"className="btn previous-btn">
-              Previous
-            </Link>
-          </button>{" "}
-          <button name="" id="" class="btn " role="button">
-            <Link href="/detailes"  className="btn continue-btn">
-              Continue
-            </Link>
-          </button>
+<div className="col-12 d-flex justify-content-between  ">
+        <div className='col-5'>
+           <button name="" id="" class="btn p-4 form-control w-100 previous-btn" >
+          <Link href="/questions" className=" text-decoration-none text-reset">
+            Previous
+          </Link>
+        </button>{" "}
         </div>
+       
+        <div className='col-5'>    
+         <button name="" id=""class="btn p-4 form-control w-100 continue-btn">
+          <Link href="/details" className=" text-decoration-none text-reset">
+            Continue
+          </Link>
+        </button>
+           </div>
+   
+      </div>
 
 
 

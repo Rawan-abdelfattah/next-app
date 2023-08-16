@@ -10,27 +10,19 @@
     }
 
   }
-.continue-btn{
+  .continue-btn{
     background-color: #e7f2f9 !important; 
     border: none; 
-    padding: 20px   100px;
     font-size: 20px;
-    border-radius: 4px; 
     color: white;
     transition: all .5s;
-    /* margin: 220px; */
 }
 .previous-btn{
-    padding: 20px   120px;
     font-size: 20px;
     border-radius: 4px; 
-    /* margin: 220px; */
     transition: all .5s;
     border: 1px solid #e7e6e6;
 }
 .previous-btn:hover{
     border-color: rgb(83, 191, 254);
 }
-/* .symptoms-input::placeholder{
-    text-align: center;
-} */
