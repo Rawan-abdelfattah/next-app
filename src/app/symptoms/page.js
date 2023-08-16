@@ -7,7 +7,7 @@ import  body  from "../../assets/body.jpg";
 export default function symptoms() {
   return (
     <>
-      <div className="container w-50">
+      <div className="container ">
         <div class="row  justify-content-center align-items-center g-2  shadow p-4 mt-4">
           <h3>What are your symptoms?</h3>
           <div className="col-6">
