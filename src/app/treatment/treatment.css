@@ -1,0 +1,50 @@
+.container{
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+   
+    
+    .container {
+      width: 50%;
+    }
+
+  }
+.continue-btn{
+    background-color: #e7f2f9 !important; 
+    border: none; 
+    font-size: 20px;
+    color: white;
+    transition: all .5s;
+}
+.previous-btn{
+    font-size: 20px;
+    border-radius: 4px; 
+    transition: all .5s;
+    border: 1px solid #e7e6e6;
+}
+.previous-btn:hover{
+    border-color: rgb(83, 191, 254);
+}
+.disease-card{
+    background-color:#effafd ;
+    font-weight: 700;
+    color: #6d6d6d;
+}
+
+.yes-btn , .no-btn{
+    background-color: #e7f2f9 !important; 
+    border: none; 
+    padding: 20px ;
+    width: 120px;
+    font-size: 17px;
+    border-radius: 4px; 
+    margin-left: 2px;
+    color: #333;
+    transition: all .5s;
+}
+.yes-btn:hover , .no-btn:hover{
+    background-color: #acd7f2 !important; 
+    color: white;
+
+}
