@@ -1,9 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import "./treatment.css";
+import Header from "../components/Header/Header";
 export default function treatment() {
   return (
     <div className="container ">
+      <Header/>
       <div class="row  g-2  shadow p-4 mt-4">
         <div className="col-lg-4">
           <h4>Conditions that match your symptoms</h4>
@@ -81,14 +83,18 @@ export default function treatment() {
           </h3>
           <h6 className="text-center"> Borreliosis</h6>
           <div className="d-flex justify-content-around mt-4">
-            <p>CONDITIONS</p>
-            <p>
+          <p>
               <Link
-                href={"/treatment"}
+                href={"/conditions"}
                 className=" text-decoration-none text-reset"
               >
-                TREATMENT OPTIONS
+                CONDITION
               </Link>{" "}
+            </p>
+            <p>
+           
+                TREATMENT OPTIONS
+            
             </p>
           </div>
           <hr />

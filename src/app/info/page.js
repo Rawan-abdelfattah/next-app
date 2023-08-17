@@ -1,10 +1,12 @@
 import React from "react";
 import "./info.css";
 import Link from "next/link";
+import Header from "../components/Header/Header";
 export default function info() {
   return (
     <>
       <div className="container">
+        <Header/>
         <div class="row  justify-content-center align-items-center g-2  shadow p-4 mt-4">
           <div className="col-12 text-center">
             <h1 className="font-size-2rem mb-4 ">

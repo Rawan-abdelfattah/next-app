@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 import './details.css'
+import Header from '../components/Header/Header'
 export default function details() {
   return (
     <div className="container ">
+      <Header/>
     <div class="row  g-2  shadow p-4 mt-4">
       <div className='col-lg-4'>
         <h4>

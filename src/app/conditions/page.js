@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import './conditions.css'
+import Header from '../components/Header/Header'
 export default function conditions() {
   return (
     <>
       <div className="container ">
+        <Header/>
         <div class="row  justify-content-center align-items-center g-2  shadow p-4 mt-4">
           <div className='col-12 condition-title rounded p-2'>
           Only <span className='fw-bold'>low strength matches</span>  found. Try <span className='fw-bold'> adding more symptoms</span>  to improve your results.

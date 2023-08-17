@@ -2,12 +2,14 @@ import Link from "next/link";
 import React from "react";
 import "./symptoms.css";
 import  body  from "../../assets/body.jpg";
+import Header from "../components/Header/Header";
 // import  calender   from "../../assets/calender.jpg";
 
 export default function symptoms() {
   return (
     <>
       <div className="container ">
+        <Header/>
         <div class="row  justify-content-center align-items-center g-2  shadow p-4 mt-4">
           <h3>What are your symptoms?</h3>
           <div className="col-lg-6">
