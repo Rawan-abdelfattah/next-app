@@ -10,7 +10,7 @@ export default function Navbar() {
       <NavLink className="navbar-brand d-flex mt-2" to="/">
        
 
-         <h1 > <span   style={{color:'#0696f3'  }}>Elahly</span> Hospital</h1>
+         <h1 > <span   style={{color:'#0696f3'  }}>ALAHLY</span> Hospital</h1>
 
 
       </NavLink>

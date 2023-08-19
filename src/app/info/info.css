@@ -50,7 +50,7 @@
 
 }
 .male-btn , .female-btn{
-    background-color: #e7f2f9 !important; 
+    background-color: #e7f2f9 ; 
     border: none; 
     padding: 20px ;
     width: 120px;
@@ -64,13 +64,17 @@
     background-color: #acd7f2 !important; 
 }
 .continue-info-btn{
-    background-color: #e7f2f9 !important; 
+    background-color: #0f83d1 !important; 
     border: none; 
     font-size: 20px;
     color: white;
     transition: all .5s;
-    margin-top: 200px;
-    margin-bottom: 120px;
+    margin-top: 10px;
+    margin-bottom: 50px;
     
 
+}
+.continue-info-btn:hover{
+    color: #fff;
+    opacity: .7;
 }

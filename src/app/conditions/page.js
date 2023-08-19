@@ -1,8 +1,22 @@
+"use client";
+
 import Link from 'next/link'
 import React from 'react'
 import './conditions.css'
 import Header from '../components/Header/Header'
-export default function conditions() {
+import { useSelector } from 'react-redux'
+import { useRouter } from 'next/navigation'
+
+export default function Conditions() {
+  const router = useRouter();
+  const age= useSelector((state)=>state.user.age)
+  const gender= useSelector((state)=>state.user.gender)
+  const bothering= useSelector((state)=>state.user.bothering)
+  const conditions= useSelector((state)=>state.user.conditions)
+  const pregnant= useSelector((state)=>state.user.pregnant)
+  const medications= useSelector((state)=>state.user.medications)
+
+  if(!age) router.push("/info")
   return (
     <>
       <div className="container ">
@@ -21,13 +35,14 @@ export default function conditions() {
   <div className='col-lg-5 m-4'>
           <hr/>
           <div className='d-flex justify-content-between'>
-               <p>Gender</p>
-          <p>Age</p>
-          <p>Edit</p>
+            <p>Gender</p>
+            <p>Age</p>
+            <p>Edit</p>
           </div>
           <div className='d-flex justify-content-between'>
-               <p>Female</p>
-          <p>20</p>
+            <p>{gender}</p>
+            <p>{age}</p>
+            <p></p>
           </div>
        
           <hr/>
@@ -51,35 +66,22 @@ export default function conditions() {
 <div className="col-12 d-flex justify-content-between  ">
         <div className='col-5'>
            <button name="" id="" class="btn p-4 form-control w-100 previous-btn" >
-          <Link href="/questions" className=" text-decoration-none text-reset">
-            Previous
-          </Link>
-        </button>{" "}
+                <Link href="/questions" className=" text-decoration-none text-reset">
+                  Previous
+                </Link>
+             </button>{" "}
         </div>
-       
         <div className='col-5'>    
-         <button name="" id=""class="btn p-4 form-control w-100 continue-btn">
-          <Link href="/details" className=" text-decoration-none text-reset">
-            Continue
-          </Link>
-        </button>
-           </div>
+          <button name="" id=""class="btn p-4 form-control w-100 continue-btn">
+            <Link href="/details" className=" text-decoration-none text-reset">
+              Continue
+            </Link>
+          </button>
+        </div>
    
       </div>
-
-
-
-
-
-
-
-
-
-        </div>
-      
-
-
-      </div>
+    </div>
+  </div>
     </>
   )
 }

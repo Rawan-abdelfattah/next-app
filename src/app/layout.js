@@ -2,7 +2,12 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './components/Navbar/Navbar'
+import { Providers } from '../redux/provider';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: 'Elahly Hospital',
@@ -12,11 +17,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-        
-
-      <body className={inter.className}>  <Navbar/>{children}
-
-      
+      <body className={inter.className}>  
+      <Providers>
+          <Navbar/>
+          <ToastContainer/>
+          {children}
+      </Providers>
       </body>
     </html>
   )

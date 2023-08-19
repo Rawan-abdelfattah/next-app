@@ -106,3 +106,18 @@ a {
   }
 } */
 /* @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap'); */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Remove the default margin */
+}
+
+/* Style the input to look like a plain text field */
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+:root{
+  --primary : #0696f3;
+  --secondary: #e7f2f9;
+}

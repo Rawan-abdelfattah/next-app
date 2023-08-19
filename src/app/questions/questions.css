@@ -59,7 +59,7 @@
 
 }
 .yes-btn , .no-btn{
-    background-color: #e7f2f9 !important; 
+    /* background-color: #e7f2f9 !important;  */
     border: none; 
     padding: 20px ;
     width: 140px;
@@ -70,7 +70,15 @@
     transition: all .5s;
 }
 .yes-btn:hover , .no-btn:hover{
-    background-color: #acd7f2 !important; 
+    /* background-color: #acd7f2 !important;  */
     color: white;
 
+}
+.skip-section{
+    text-decoration:none;
+    text-align: center;
+    display: block;
+    margin: 8px 0 0;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
