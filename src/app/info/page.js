@@ -2,12 +2,27 @@ import React from "react";
 import "./info.css";
 import Link from "next/link";
 import Header from "../components/Header/Header";
+import Multistep from "../components/Multistep/Multistep";
 export default function info() {
   return (
     <>
       <div className="container">
         <Header/>
-        <div class="row  justify-content-center align-items-center g-2  shadow p-4 mt-4">
+        <div className="shadow">
+          <Multistep/>
+
+{/*      
+        <div className='step-row mb-0 w-100 d-flex justify-content-between  d-none d-lg-flex'>
+        <div id='progress'></div>
+        <div className='step-col p-4 '>INFO</div>
+        <div className='step-col  p-4 ' >SYMPTOMS</div>
+        <div className='step-col   p-4 '>QUESTIOND</div>
+        <div className='step-col  p-4 '>DETAILS</div>
+        <div className='step-col  p-4 '>CONDITIONS</div>
+        <div className='step-col  p-4 '>TREATMENT</div>
+      </div> */}
+        <div class="row  justify-content-center align-items-center g-2   p-4 ">
+
           <div className="col-12 text-center">
             <h1 className="font-size-2rem mb-4 ">
               <span className="text-color"> Elahly</span> Hospital Symptom
@@ -57,6 +72,7 @@ export default function info() {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

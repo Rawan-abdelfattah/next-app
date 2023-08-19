@@ -55,7 +55,7 @@ export default function details() {
         <h3 className='text-center ' style={{marginTop:'70px' ,fontWeight: "700" , 
     color: '#6d6d6d'}}>Lyme Disease   </h3><h6  className='text-center' > Borreliosis</h6>
 
-        <div className='d-flex justify-content-around mt-4'>
+        <div className='d-flex justify-content-around mt-4'  >
                   <p>CONDITIONS</p>
         <p><Link href={'/treatment'} className=" text-decoration-none text-reset">TREATMENT OPTIONS</Link> </p>
         
