@@ -38,7 +38,7 @@ const SymptomsAutoComplete = () => {
       />
       <div className="row mt-4">
         {
-          symptoms.map((ele,ind)=> <div className='my-2 col-lg-4 col-md-4 col-6 sympton-btn'>{ele} <AiFillCloseCircle className='close-btn' onClick={()=>handleDelete(ind)}/></div>)
+          symptoms.map((ele,ind)=> <div className='my-2  col-12 sympton-btn'>{ele} <AiFillCloseCircle className='close-btn' onClick={()=>handleDelete(ind)}/></div>)
         }
       </div>
     </div>

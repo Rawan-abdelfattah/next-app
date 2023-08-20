@@ -15,7 +15,8 @@ export default function Conditions() {
   const conditions= useSelector((state)=>state.user.conditions)
   const pregnant= useSelector((state)=>state.user.pregnant)
   const medications= useSelector((state)=>state.user.medications)
-
+  const symptoms= useSelector((state)=>state.user.symptoms)
+  console.log(symptoms)
   if(!age) router.push("/info")
   return (
     <>
@@ -37,21 +38,20 @@ export default function Conditions() {
           <div className='d-flex justify-content-between'>
             <p>Gender</p>
             <p>Age</p>
-            <p>Edit</p>
           </div>
           <div className='d-flex justify-content-between'>
             <p>{gender}</p>
             <p>{age}</p>
-            <p></p>
           </div>
        
           <hr/>
-          <div className='d-flex justify-content-between'>
-               <p>My Symptoms</p>
-          <p>Edit</p>
-          </div>
-          <p>tiredness , abdominal</p>
+          <ul  >
+              {symptoms.map((ele)=>(
+                <li>{ele}</li>
+              ))}
+          </ul>
           <p>tiredness </p>
+          
           <hr/>
           <div className='text-center'>
                 <button name="" id="" class="btn " role="button">
