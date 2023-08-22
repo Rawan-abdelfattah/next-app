@@ -4,9 +4,9 @@ import './details.css'
 import Header from '../components/Header/Header'
 export default function details() {
   return (
-    <div className="container ">
-      <Header/>
-    <div class="row  g-2  shadow p-4 mt-4">
+    <div className=" ">
+      {/* <Header/> */}
+    <div class="row  g-2   p-4 mt-4">
       <div className='col-lg-4'>
         <h4>
         Conditions that match your symptoms
@@ -113,7 +113,7 @@ export default function details() {
       </div>
       <hr/>
 
-      <div className="col-12 d-flex justify-content-between  ">
+      {/* <div className="col-12 d-flex justify-content-between  ">
         <div className='col-5'>
            <button name="" id="" class="btn p-4 form-control w-100 previous-btn" >
           <Link href="/conditions" className=" text-decoration-none text-reset">
@@ -130,7 +130,7 @@ export default function details() {
         </button>
            </div>
    
-      </div>
+      </div> */}
     </div>
   </div>
   )

@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
 
-    <div className='row d-flex pt-4'>
+    <div className='row d-flex pt-2 mb-2 pb-2'>
         <div className="col-lg-1">        <Image   src={logo} height={70}  alt="" />
 
 </div>

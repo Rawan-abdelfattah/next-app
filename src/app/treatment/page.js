@@ -4,9 +4,9 @@ import "./treatment.css";
 import Header from "../components/Header/Header";
 export default function treatment() {
   return (
-    <div className="container ">
-      <Header/>
-      <div class="row  g-2  shadow p-4 mt-4">
+    <div className="  ">
+      {/* <Header/> */}
+      <div class="row  g-2    p-4 mt-4">
         <div className="col-lg-4">
           <h4>Conditions that match your symptoms</h4>
           <span style={{ color: "#0696f3" }}>UNDERSTANDING YOUR RESULTS</span>
@@ -160,7 +160,7 @@ export default function treatment() {
         </div>
         <hr />
 
-        <div className="col-12 d-flex justify-content-between  ">
+        {/* <div className="col-12 d-flex justify-content-between  ">
           <div className="col-5">
             <button
               name=""
@@ -190,7 +190,7 @@ export default function treatment() {
               </Link>
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

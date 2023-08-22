@@ -1,23 +1,61 @@
-"use client";
-import React from 'react'
-import './Multistep.css'
-export default function Multistep() {
+"use client"
+import React, { useState } from 'react';
+import Link from 'next/link';
+import './Multistep.css';
+
+const Stepper = () => {
+  const [currentStep, setCurrentStep] = useState(0);
+
+  const steps = [
+    'INFO',
+    'SYMPTOMS',
+    'QUESTIOND',
+    'DETAILS',
+    'CONDITIONS',
+    'TREATMENT'
+  ];
+
+  const handleNext = () => {
+    if (currentStep < steps.length - 1) {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const handleBack = () => {
+    if (currentStep > 0) {
+      setCurrentStep(currentStep - 1);
+    }
+  };
+
   return (
     <div>
-          
-            
-        <div className='step-row mb-0 w-100 d-flex justify-content-between  d-none d-lg-flex'>
+      <div className='step-row mb-0 w-100 justify-content-between d-none d-lg-flex'>
         <div id='progress'></div>
-        <div className='step-col p-4 '>INFO</div>
-        <div className='step-col  p-4 ' >SYMPTOMS</div>
-        <div className='step-col   p-4 '>QUESTIOND</div>
-        <div className='step-col  p-4 '>DETAILS</div>
-        <div className='step-col  p-4 '>CONDITIONS</div>
-        <div className='step-col  p-4 '>TREATMENT</div>
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className={`step-col p-4 ${index === currentStep ? 'active' : ''}`}
+          >
+            {step}
+          </div>
+        ))}
       </div>
 
-      {/* <button id='next' >next</button> */}
-      {/* <button id='back'>back</button> */}
+      <button id='back' onClick={handleBack} disabled={currentStep === 0}>
+        Back
+      </button>
+      <button id='next' onClick={handleNext} disabled={currentStep === steps.length - 1}>
+        Next
+      </button>
+
+      <div>
+        {/* Add routing links to different steps */}
+        {currentStep === 0 && <Link href='/symptoms'>Go to Step 1</Link>}
+        {currentStep === 1 && <Link href='/details'>Go to Step 2</Link>}
+        {/* Add more links for other steps */}
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default Stepper;
