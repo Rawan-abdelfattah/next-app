@@ -6,16 +6,13 @@ import "./symptoms.css";
 import  body  from "../../assets/body.jpg";
 import calendar from "../../assets/calendarr.jpg"
 import Header from "../components/Header/Header";
-
-
 import Image from "next/image";
-import Multistep from "../components/Multistep/Multistep";
-// import  calender   from "../../assets/calender.jpg";
+// import Multistep from "../components/Multistep/Multistep";
 
 import SymptomsAutoComplete from './../components/SymptomsAutoComplete/SymptomsAutoComplete';
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from 'next/navigation'
-import Stepper from "../components/Stepper/Stepper";
+// import Stepper from "../components/Stepper/Stepper";
 
 export default function symptoms() {
   const symptoms= useSelector((state)=>state.user.symptoms)
@@ -53,11 +50,11 @@ export default function symptoms() {
 
             /> */}
             <SymptomsAutoComplete/>
-            <div className="text-center"><Image src={calendar} className="w-100 d-flext align-items-center justify-content-center mt-4 mb-4" alt />
+            <div className="text-center"><Image src={calendar} className="w-100 d-flext align-items-center justify-content-center mt-4 mb-4" height={450} alt />
         </div>
           </div>
           <div className="col-lg-6">
-            <Image src={body}    className="w-100  mb-4" alt />
+            <Image src={body}    className="w-100  mb-4" height={450} alt />
           </div>
           <hr/>
 

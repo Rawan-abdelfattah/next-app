@@ -14,6 +14,8 @@ const user = createSlice({
     pregnant :"",
     medications:"",
     conditions:"",
+
+    disease:[]
   },
   reducers: {
     genderChange: (state,action) => {
@@ -40,6 +42,10 @@ const user = createSlice({
     setConditions:(state,action)=>{
       state.conditions=action.payload
     },
+    setDisease:(state,action)=>{
+      state.disease=action.payload
+    }
+
   },
 });
 
@@ -51,6 +57,7 @@ export const {
    setBothering,
    setPregnant,
    setMedications,
-   setConditions
+   setConditions,
+   setDisease
   } = user.actions;
 export default user.reducer;

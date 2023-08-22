@@ -49,3 +49,9 @@
      background-color:  rgba(83, 191, 254, 0.544);
      color: white;
   }
+
+  .edit-data{
+    color:var(--primary);
+    text-decoration:none;
+    margin :0 10px;
+  }

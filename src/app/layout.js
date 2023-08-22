@@ -5,8 +5,6 @@ import Navbar from './components/Navbar/Navbar'
 import { Providers } from '../redux/provider';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Stepper from './components/Stepper/Stepper'
-
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,13 +17,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     
-          
 
       <body className={inter.className}>  
       <Providers>
           <Navbar/>
-          <Stepper/>
           <ToastContainer/>
           {children}
       </Providers>
